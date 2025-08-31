@@ -2,20 +2,20 @@ spring:
   application:
     name: product-service
   datasource:
-    #    url: jdbc:postgresql://localhost:5432/product
+    url: jdbc:postgresql://localhost:5432/product
 #    url: jdbc:postgresql://ep-autumn-mud-adqm8t9d-pooler.c-2.us-east-1.aws.neon.tech/product?sslmode=require&channel_binding=require'
-    url: jdbc:mysql://localhost:3307/productdb
+#    url: jdbc:mysql://localhost:3307/productdb
 #    username: neondb_owner
 #    password: npg_Ffkt5udzPKh3
     username: admin
     password: admin
   jpa:
-#    database: POSTGRESQL
+    database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: update
 #    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
         format_sql: true

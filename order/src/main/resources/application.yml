@@ -3,14 +3,16 @@ spring:
     name: order-service
   datasource:
     url: jdbc:postgresql://localhost:5432/order
-    username: root
-    password: root
+    username: admin
+    password: admin
   jpa:
     database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
 #  h2:
 #    console:
 #      enabled: true
