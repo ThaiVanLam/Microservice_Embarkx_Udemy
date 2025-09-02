@@ -4,9 +4,15 @@ spring:
 #  profiles:
 #    active: dev
 
+#build:
+#  id: ${ID}
+#  version: ${VERSION}
+#  name: ${NAME}
+
 build:
-  id: ${ID}
-  version: ${VERSION}
-  name: ${NAME}
+  id: 10101
+  version: 1.2.3.4
+  name: "Application"
+  type: "Application Build"
 
 #ID=9999;NAME=NEW_NAME;VERSION=3.3.3.3
