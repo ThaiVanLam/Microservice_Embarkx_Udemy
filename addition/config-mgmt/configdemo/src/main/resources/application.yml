@@ -1,13 +1,21 @@
 spring:
   application:
     name: configdemo
-#  profiles:
-#    active: dev
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://localhost:8888
 
-build:
-  id: ${ID}
-  version: ${VERSION}
-  name: ${NAME}
+#build:
+#  id: ${ID}
+#  version: ${VERSION}
+#  name: ${NAME}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 
 #build:
 #  id: 10101

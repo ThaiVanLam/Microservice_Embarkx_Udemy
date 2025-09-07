@@ -2,11 +2,13 @@ package com.info.configdemo;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
+@RefreshScope
 public class BuildInfoController {
 //    @Value("${build.id:default}")
 //    private String buildId;
@@ -23,4 +25,9 @@ public class BuildInfoController {
     public String getBuildInfo() {
         return "Build ID: " + buildInfo.getId() + ", Version: " + buildInfo.getVersion() + ", Name: " + buildInfo.getName();
     }
+
+//    @GetMapping("/build-info")
+//    public String getBuildInfo() {
+//        return "Build ID: " + buildId + ", Version: " + buildVersion + ", Name: " + buildName;
+//    }
 }
