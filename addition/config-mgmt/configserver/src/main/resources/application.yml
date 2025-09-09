@@ -1,13 +1,21 @@
 spring:
   application:
     name: configserver
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/ThaiVanLam/app-configuration
-          username: ${GIT_USER}
-          password: ${GIT_TOKEN}
+        native:
+          search-locations: classpath:/config
+
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/ThaiVanLam/app-configuration
+#          username: ${GIT_USER}
+#          password: ${GIT_TOKEN}
 
 
 #  profiles:
