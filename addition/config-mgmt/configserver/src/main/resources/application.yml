@@ -1,32 +1,40 @@
 spring:
   application:
     name: configserver
-  profiles:
-    active: jdbc
-  datasource:
-    url: jdbc:mysql://localhost:3306/configdb
-    username: ${USER}
-    password: ${PASSWORD}
-    driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     config:
       server:
-        jdbc:
-          sql: "SELECT PROP_KEY, PROP_VALUE FROM PROPERTIES WHERE APPLICATION=? AND PROFILE=? AND LABEL=?"
-          default-label: main
+        git:
+          uri: https://github.com/ThaiVanLam/app-configuration
+          username: ${GIT_USER}
+          password: ${GIT_TOKEN}
 
+
+#  profiles:
+#    active: jdbc
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/configdb
+#    username: ${USER}
+#    password: ${PASSWORD}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 #  cloud:
 #    config:
 #      server:
-#        git:
-#          uri: https://github.com/ThaiVanLam/app-configuration
-#          username: ${GIT_USER}
-#          password: ${GIT_TOKEN}
+#        jdbc:
+#          sql: "SELECT PROP_KEY, PROP_VALUE FROM PROPERTIES WHERE APPLICATION=? AND PROFILE=? AND LABEL=?"
+#          default-label: main
+
+
 #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
 
 server:
   port: 8888
 
-encrypt:
-  key: "0E329232EA6D0D73"
+#encrypt:
+#  key: "0E329232EA6D0D73"
 
+encrypt:
+  key-store:
+    location: config-server.jks
+    password: mypass
+    alias: config-server-key
