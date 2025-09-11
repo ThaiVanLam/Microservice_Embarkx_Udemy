@@ -7,7 +7,20 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/config
+          search-locations: file:///E:\file_tai_lieu\Course\do_an_tot_nghiep\Spring Boot Microservices Professional eCommerce Masterclass\Microservices\addition\config-mgmt\configserver\src\main\resources\config
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 #  cloud:
 #    config:
