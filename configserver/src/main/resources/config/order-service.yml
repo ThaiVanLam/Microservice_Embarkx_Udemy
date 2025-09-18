@@ -1,14 +1,29 @@
 spring:
   datasource:
-    url: ${URL}
+    url: jdbc:postgresql://localhost:5432/order
     username: ${USERNAME}
     password: ${PASSWORD}
   jpa:
-    database: ${DATABASE}
-    show-sql: ${SHOW_SQL}
+    database: POSTGRESQL
+    show-sql: true
     hibernate:
-      ddl-auto: ${DDL_AUTO}
-    database-platform: ${DATABASE_PLATFORM}
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
 
 server:
-  port: ${PORT}
+  port: 8083
+
+app:
+  message: "Hello order"

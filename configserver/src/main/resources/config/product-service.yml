@@ -1,19 +1,32 @@
 spring:
   datasource:
-    url: ${URL}
+    url: jdbc:postgresql://localhost:5432/product
     username: ${USERNAME}
     password: ${PASSWORD}
   jpa:
-    database: ${DATABASE}
-    show-sql: ${SHOW_SQL}
+    database: POSTGRESQL
+    show-sql: true
     hibernate:
-      ddl-auto: ${DDL_AUTO}
-    database-platform: ${DATABASE_PLATFORM}
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
-        format_sql: ${FORMAT_SQL}
+        format_sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 server:
-  port: ${PORT}
+  port: 8081
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+app:
+  message: "Hello product"
 
