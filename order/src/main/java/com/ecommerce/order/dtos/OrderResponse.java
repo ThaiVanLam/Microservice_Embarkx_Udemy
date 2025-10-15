@@ -1,4 +1,4 @@
-package com.ecommerce.order.dto;
+package com.ecommerce.order.dtos;
 
 
 import com.ecommerce.order.models.OrderStatus;

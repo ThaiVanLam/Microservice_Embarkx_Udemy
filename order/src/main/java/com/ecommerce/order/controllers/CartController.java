@@ -1,7 +1,7 @@
 package com.ecommerce.order.controllers;
 
 
-import com.ecommerce.order.dto.CartItemRequest;
+import com.ecommerce.order.dtos.CartItemRequest;
 import com.ecommerce.order.models.CartItem;
 import com.ecommerce.order.services.CartService;
 import lombok.RequiredArgsConstructor;

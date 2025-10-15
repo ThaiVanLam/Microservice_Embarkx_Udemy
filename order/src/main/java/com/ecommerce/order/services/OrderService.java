@@ -1,8 +1,8 @@
 package com.ecommerce.order.services;
 
 
-import com.ecommerce.order.dto.OrderItemDTO;
-import com.ecommerce.order.dto.OrderResponse;
+import com.ecommerce.order.dtos.OrderItemDTO;
+import com.ecommerce.order.dtos.OrderResponse;
 import com.ecommerce.order.models.CartItem;
 import com.ecommerce.order.models.Order;
 import com.ecommerce.order.models.OrderItem;
