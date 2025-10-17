@@ -1,0 +1,14 @@
+2025-10-17T10:33:26.417+07:00  INFO 2660 --- [product-service] [main] c.ecommerce.product.ProductApplication   : Starting ProductApplication using Java 24.0.1 with PID 2660 (E:\file_tai_lieu\Course\do_an_tot_nghiep\Spring Boot Microservices Professional eCommerce Masterclass\Microservices\product\target\classes started by thaiv in E:\file_tai_lieu\Course\do_an_tot_nghiep\Spring Boot Microservices Professional eCommerce Masterclass\Microservices)
+2025-10-17T10:33:26.424+07:00  INFO 2660 --- [product-service] [main] c.ecommerce.product.ProductApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-17T10:33:26.638+07:00  INFO 2660 --- [product-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-10-17T10:33:26.639+07:00  INFO 2660 --- [product-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=product-service, profiles=[default], label=null, version=null, state=null
+2025-10-17T10:33:30.751+07:00  INFO 2660 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-17T10:33:31.196+07:00  INFO 2660 --- [product-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 421 ms. Found 1 JPA repository interface.
+2025-10-17T10:33:31.975+07:00  INFO 2660 --- [product-service] [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-10-17T10:33:31.994+07:00  INFO 2660 --- [product-service] [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-10-17T10:33:32.425+07:00  INFO 2660 --- [product-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bf9175b5-be12-33b0-ab85-f5f22c7bdec3
+2025-10-17T10:33:34.045+07:00  INFO 2660 --- [product-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-17T10:33:34.094+07:00  INFO 2660 --- [product-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-17T10:33:34.095+07:00  INFO 2660 --- [product-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-17T10:33:34.296+07:00  INFO 2660 --- [product-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-17T10:33:34.297+07:00  INFO 2660 --- [product-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7651 ms
