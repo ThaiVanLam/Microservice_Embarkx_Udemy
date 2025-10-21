@@ -1,0 +1,4 @@
+# Ignore Loki & MinIO generated data
+addition/evaluate-loki/.data/
+addition/evaluate-loki/.data/*
+addition/evaluate-loki/.data/**
