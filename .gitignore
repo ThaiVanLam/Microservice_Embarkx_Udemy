@@ -2,3 +2,5 @@
 addition/evaluate-loki/.data/
 addition/evaluate-loki/.data/*
 addition/evaluate-loki/.data/**
+
+addition/evaluate-prometheus/.data/**
