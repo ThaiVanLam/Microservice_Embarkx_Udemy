@@ -16,11 +16,12 @@ spring:
     username: guest
     password: guest
 
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "*"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
 server:
   port: 8083
