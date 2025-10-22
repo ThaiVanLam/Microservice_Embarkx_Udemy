@@ -143,3 +143,23 @@ Caused by: java.io.EOFException: null
 2025-10-22T11:32:13.404+07:00  INFO 19076 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
 2025-10-22T11:36:51.831+07:00  INFO 19076 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-10-22T11:41:51.833+07:00  INFO 19076 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-10-22T11:46:51.833+07:00  INFO 19076 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-10-22T11:51:51.851+07:00  INFO 19076 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-10-22T11:56:14.477+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-SERVICE with eureka with status DOWN
+2025-10-22T11:56:14.479+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1761108974479, current=DOWN, previous=UP]
+2025-10-22T11:56:14.479+07:00  INFO 19076 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/localhost:user-service:8082: registering service...
+2025-10-22T11:56:14.496+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T11:56:14.496+07:00  INFO 19076 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/localhost:user-service:8082 - registration status: 204
+2025-10-22T11:56:14.511+07:00  INFO 19076 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T11:56:14.555+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-10-22T11:56:14.726+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-10-22T11:56:14.727+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.Is2VVCtSQEO46HZ30xlagQ'
+2025-10-22T11:56:14.748+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'user-service.rabbit-1242421329.springCloudBusInput.errors' has 1 subscriber(s).
+2025-10-22T11:56:14.750+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'user-service.rabbit-1242421329.springCloudBusInput.errors' has 0 subscriber(s).
+2025-10-22T11:56:14.790+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-10-22T11:56:14.790+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'user-service.errorChannel' has 0 subscriber(s).
+2025-10-22T11:56:14.791+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2025-10-22T11:56:14.827+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-10-22T11:56:17.829+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-10-22T11:56:17.838+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/localhost:user-service:8082 - deregister  status: 200
+2025-10-22T11:56:17.838+07:00  INFO 19076 --- [user-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
