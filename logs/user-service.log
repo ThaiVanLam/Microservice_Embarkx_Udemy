@@ -57,3 +57,8 @@
 2025-10-25T15:19:51.898+07:00  INFO 13092 --- [user-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
 2025-10-25T15:19:52.907+07:00  INFO 13092 --- [user-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
 2025-10-25T15:19:52.986+07:00  INFO 13092 --- [user-service] [main] [                                                 ] com.ecommerce.user.UserApplication       : Started UserApplication in 20.578 seconds (process running for 21.707)
+2025-10-25T15:24:50.033+07:00  INFO 13092 --- [user-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-10-25T15:25:29.764+07:00  INFO 13092 --- [user-service] [http-nio-8082-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-25T15:25:29.765+07:00  INFO 13092 --- [user-service] [http-nio-8082-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-25T15:25:29.768+07:00  INFO 13092 --- [user-service] [http-nio-8082-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-25T15:29:50.034+07:00  INFO 13092 --- [user-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

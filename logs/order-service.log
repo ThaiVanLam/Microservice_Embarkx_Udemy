@@ -74,3 +74,5 @@
 2025-10-25T15:19:57.759+07:00  INFO 20780 --- [order-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
 2025-10-25T15:19:58.764+07:00  INFO 20780 --- [order-service] [main] [                                                 ] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
 2025-10-25T15:19:58.845+07:00  INFO 20780 --- [order-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Started OrderApplication in 22.198 seconds (process running for 24.099)
+2025-10-25T15:24:56.267+07:00  INFO 20780 --- [order-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-10-25T15:29:56.269+07:00  INFO 20780 --- [order-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
